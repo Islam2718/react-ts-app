@@ -212,28 +212,32 @@ You will also see any lint errors in the console.
     export default Footer;
 
 ## Code Example: src/components/global/Menu.tsx
-    import React from 'react';
-    import Header from './components/global/Header';
-    import Menu from './components/global/Menu';
-    import Footer from './components/global/Footer';
-    import PublicRoutes from './routes/PublicRoutes';
-    import AdminRoutes from './routes/AdminRoutes';
+    import React from "react";
 
-    function App() {
-    const projectName = 'React TypeScript App';
+    const Menu = () => {
+        const linkUrl = window.location.pathname;
+        return (
+            <>
+                <div className="container menu d-flex justify-content-end border border-info p-3 rounded">
+                    <a href="/"
+                        className={`btn btn-sm me-2 ${linkUrl === '/' ? 'btn-info' : 'btn-default'}`}
+                    >Home</a>
+                    
+                    <a href="/about"
+                        className={`btn btn-sm me-2 ${linkUrl === '/about' ? 'btn-info' : 'btn-default'}`}
+                    >About</a>
+                    <a href="contact"
+                        className={`btn btn-sm me-2 ${linkUrl === '/contact' ? 'btn-info' : 'btn-default'}`}
+                    >Contact</a>
+                    <a href="login" 
+                        className={`btn btn-sm me-2 ${linkUrl === '/login' ? 'btn-info' : 'btn-default'}`}
+                    >Login</a>
+                </div>
+            </>
+        );
+    };
 
-    return (
-        <>
-        <Header projectName={projectName} />
-        <Menu />
-        <PublicRoutes />
-        <AdminRoutes />
-        <Footer />
-        </>
-    );
-    }
-
-    export default App;
+    export default Menu;
 
 ## Code Example: App.tsx
     import React from 'react';
