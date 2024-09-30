@@ -3,7 +3,7 @@
 Here, I will create a React project with TypeScript template. I use on this project ReactDom and Bootstrap. 
 
 ## Clone and Run This Proejct:
-    open terminal and run below command - 
+open terminal and run below command - 
     - git clone https://github.com/Islam2718/react-ts-app.git 
     - cd react-ts-app
     - npm install
