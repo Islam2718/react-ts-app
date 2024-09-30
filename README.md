@@ -16,21 +16,28 @@ The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
 ## Developement from 0: 
-    
     - ensure node on your machine. 
     - create react project: npx create-react-app react-ts-app --template typescript
     - Entire on this project folder: cd react-ts-app
     - Run Project: npm start
 
-Create folder into src: 
+### Create folder into src: 
     - components
     - pages
     - routes
 
-create file into routes: 
+### create file into routes: 
     - AdminRoutes.tsx
     - PublicRoutes.tsx
     [notes: you can use your own_name.tsx]
-    
-    - install ReactDom: npm install react-router-dom @types/react-router-dom
-    - 
+
+### Create Folder & file into pages folder: 
+    - Public/HomePage.tsx
+    - Public/AboutPage.tsx
+    - Public/ContactPage.tsx
+    - Admin/DashboardPage.tsx
+    - Admin/LoginPage.tsx
+    - Admin/SettingsPage.tsx
+
+## install ReactDom: 
+    npm install react-router-dom @types/react-router-dom
