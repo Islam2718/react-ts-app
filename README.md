@@ -91,3 +91,161 @@ You will also see any lint errors in the console.
     };
 
     export default AdminRoutes;
+
+## Code Example: src/pages/Public/HomePage.tsx
+    import React from "react";
+
+    const HomePage = () => {
+        return (
+            <>
+                <div className="container py-3">
+                    <h1>Home Page</h1>
+                </div>
+            </>
+        );
+    };
+
+    export default HomePage;
+
+## Code Example: src/pages/AboutPage.tsx
+    import React from "react";
+
+    const AboutPage = () => {
+        return (
+            <>
+                <div className="container py-3">
+                    <h1>About Page</h1>
+                </div>
+            </>
+        );
+    };
+
+    export default AboutPage;
+
+## Code Example: src/pages/Public/ContactPage.tsx
+    import React from "react";
+
+    const ContactPage = () => {
+        return (
+            <>
+                <div className="container py-3">
+                    <h1>Contact Page</h1>
+                </div>
+            </>
+        );
+    };
+
+    export default ContactPage;
+
+## Code Example: src/pages/Admin/LoginPage.tsx
+    import React from "react";
+
+    const LoginPage = () => {
+        return (
+            <>
+                <div className="container py-3">
+                    <h1>Login Page - Form</h1>
+                </div>
+            </>
+        );
+    };
+
+    export default LoginPage;
+
+## Code Example: src/pages/Admin/DashboardPage.tsx
+    import React from "react";
+
+    const DashboardPage = () => {
+        return (
+            <>
+                <div className="container py-3">
+                    <h1>Dashboard Page</h1>
+                </div>
+            </>
+        );
+    };
+
+    export default DashboardPage;
+
+## Code Example: src/pages/Admin/SettingsPage.tsx
+    import React from "react";
+
+    const SettingsPage = () => {
+        return (
+            <>
+                <div className="container py-3">
+                    <h1>Settings Page</h1>
+                </div>
+            </>
+        );
+    };
+
+    export default SettingsPage;
+
+## Code Example: src/components/global/Header.tsx
+    import React from "react";
+
+    const Header = () => {
+        return (
+            <>
+                <header className="container header">
+                    <h1 className="text-info p-3 px-0">React TypeScript App</h1>
+                </header>
+            </>
+        );
+    };
+
+    export default Header;
+
+## Code Example: src/components/global/Footer.tsx
+    import React from "react";
+
+    const Footer = () => {
+        return (
+            <div className="container border border-info rounded">
+                <p className="text-center m-0 p-0">Learn React TypeScript</p>
+            </div>
+        );
+    };
+
+    export default Footer;
+
+## Code Example: src/components/global/Menu.tsx
+    import React from "react";
+
+    const Menu = () => {
+        return (
+            <>
+                <div className="container menu d-flex justify-content-end border border-info p-3 rounded">
+                    <a href="/" className=" btn btn-sm btn-info me-2">Home</a>
+                    <a href="/about" className=" btn btn-sm btn-default me-2">About</a>
+                    <a href="contact" className=" btn btn-sm btn-default me-2">Contact</a>
+                    <a href="login" className=" btn btn-sm btn-default me-2">Login</a>                
+                </div>
+            </>
+        );
+    };
+
+    export default Menu;
+
+## Code Example: App.tsx
+    import React from 'react';
+    import PublicRoutes from './routes/PublicRoutes';
+    import AdminRoutes from './routes/AdminRoutes';
+    import Header from './components/global/Header';
+    import Menu from './components/global/Menu';
+    import Footer from './components/global/Footer';
+
+    function App() {
+    return (
+        <>
+        <Header />
+        <Menu />
+        <PublicRoutes />
+        <AdminRoutes />
+        <Footer />
+        </>
+    );
+    }
+
+    export default App;
