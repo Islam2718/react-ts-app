@@ -1,10 +1,14 @@
 import React from "react";
 
-const Header = () => {
+interface HeaderProps {
+    projectName: string
+}
+const Header: React.FC<HeaderProps> = ({projectName}) => {
+    // console.log(projectName);
     return (
         <>
             <header className="container header">
-                <h1 className="text-info p-3 px-0">React TypeScript App</h1>
+                <h1 className="text-info p-3 px-0">{projectName}</h1>
             </header>
         </>
     );

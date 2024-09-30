@@ -212,22 +212,28 @@ You will also see any lint errors in the console.
     export default Footer;
 
 ## Code Example: src/components/global/Menu.tsx
-    import React from "react";
+    import React from 'react';
+    import Header from './components/global/Header';
+    import Menu from './components/global/Menu';
+    import Footer from './components/global/Footer';
+    import PublicRoutes from './routes/PublicRoutes';
+    import AdminRoutes from './routes/AdminRoutes';
 
-    const Menu = () => {
-        return (
-            <>
-                <div className="container menu d-flex justify-content-end border border-info p-3 rounded">
-                    <a href="/" className=" btn btn-sm btn-info me-2">Home</a>
-                    <a href="/about" className=" btn btn-sm btn-default me-2">About</a>
-                    <a href="contact" className=" btn btn-sm btn-default me-2">Contact</a>
-                    <a href="login" className=" btn btn-sm btn-default me-2">Login</a>                
-                </div>
-            </>
-        );
-    };
+    function App() {
+    const projectName = 'React TypeScript App';
 
-    export default Menu;
+    return (
+        <>
+        <Header projectName={projectName} />
+        <Menu />
+        <PublicRoutes />
+        <AdminRoutes />
+        <Footer />
+        </>
+    );
+    }
+
+    export default App;
 
 ## Code Example: App.tsx
     import React from 'react';
@@ -241,6 +247,32 @@ You will also see any lint errors in the console.
     return (
         <>
         <Header />
+        <Menu />
+        <PublicRoutes />
+        <AdminRoutes />
+        <Footer />
+        </>
+    );
+    }
+
+    export default App;
+
+## Props:
+In my Apps.tsx file contains a const value projectName. the variable value pass to the <Header> component and header component file - the props data will fetch and print. so i update the App.tsx file code - 
+
+    import React from 'react';    
+    import Header from './components/global/Header';
+    import Menu from './components/global/Menu';
+    import Footer from './components/global/Footer';
+    import PublicRoutes from './routes/PublicRoutes';
+    import AdminRoutes from './routes/AdminRoutes';
+
+    function App() {
+    const projectName = 'React TypeScript App';
+
+    return (
+        <>
+        <Header projectName={projectName} />
         <Menu />
         <PublicRoutes />
         <AdminRoutes />
