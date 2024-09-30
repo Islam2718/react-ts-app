@@ -258,7 +258,7 @@ You will also see any lint errors in the console.
     export default App;
 
 ## Props:
-In my Apps.tsx file contains a const value projectName. the variable value pass to the <Header> component and header component file - the props data will fetch and print. so i update the App.tsx file code - 
+In my Apps.tsx file contains a const value projectName. the variable value pass to the Header component and header component file - the props data will fetch and print. so i update the App.tsx file code - 
 
     import React from 'react';    
     import Header from './components/global/Header';
