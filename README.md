@@ -41,3 +41,53 @@ You will also see any lint errors in the console.
 
 ## install ReactDom: 
     npm install react-router-dom @types/react-router-dom
+
+## install bootstrap: 
+    - npm install bootstrap
+    - npm install react-bootstrap @types/react-bootstrap
+    - To Import Bootstrap CSS open and edit index.tsx file: import 'bootstrap/dist/css/bootstrap.min.css';
+    - Use: import { Button, Card } from 'react-bootstrap'; in component file. 
+
+## Code Example: PublicRoutes.tsx
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import AboutPage from "../pages/Public/AboutPage";
+import ContactPage from "../pages/Public/ContactPage";
+import HomePage from "../pages/Public/HomePage";
+
+const PublicRoutes = () => {
+    return (
+        <Router>
+            <Routes>
+                <Route path="/" element={<HomePage />} />
+                <Route path="/about" element={<AboutPage />} />
+                <Route path="/contact" element={<ContactPage />} />
+            </Routes>
+        </Router>
+    );
+};
+
+export default PublicRoutes;
+
+### Code Example: AdminRoutes.tsx
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import DashboardPage from "../pages/Admin/DashboardPage";
+import LoginPage from "../pages/Admin/LoginPage";
+import SettingsPage from "../pages/Admin/SettingsPage";
+
+const AdminRoutes = () => {
+    return (
+        <Router>
+            <Routes>
+                <Route path="/login" element={<LoginPage />} />
+                <Route path="/dashboard" element={<DashboardPage />} />
+                <Route path="/settings" element={<SettingsPage />} />
+            </Routes>
+        </Router>
+    );
+};
+
+export default AdminRoutes;

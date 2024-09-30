@@ -2,9 +2,11 @@ import React from "react";
 
 const SettingsPage = () => {
     return (
-        <div>
-            <h1>Settings Page</h1>
-        </div>
+        <>
+            <div className="container py-3">
+                <h1>Settings Page</h1>
+            </div>
+        </>
     );
 };
 
