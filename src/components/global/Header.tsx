@@ -4,7 +4,6 @@ interface HeaderProps {
     projectName: string
 }
 const Header: React.FC<HeaderProps> = ({projectName}) => {
-    // console.log(projectName);
     return (
         <>
             <header className="container header">
