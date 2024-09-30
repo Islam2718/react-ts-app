@@ -71,6 +71,7 @@ const PublicRoutes = () => {
 export default PublicRoutes;
 
 ### Code Example: AdminRoutes.tsx
+<code>
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -91,3 +92,4 @@ const AdminRoutes = () => {
 };
 
 export default AdminRoutes;
+</code>
